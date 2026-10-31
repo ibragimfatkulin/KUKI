@@ -1,0 +1,62 @@
+import type { ExampleKey } from "./examples";
+import type { GenerateInput } from "./types";
+
+export const EXAMPLE_INPUTS: Record<ExampleKey, GenerateInput> = {
+  "microwave-chicken": {
+    ingredients: [
+      { name: "Куриное филе", quantity: 300, unit: "г" },
+      { name: "Сыр", quantity: 100, unit: "г" },
+      { name: "Помидор", quantity: 2, unit: "шт" },
+      { name: "Сметана", quantity: 3, unit: "ст. л." },
+      { name: "Чеснок", quantity: 2, unit: "зубчик" },
+    ],
+    equipment: ["microwave"],
+    timeMinutes: 20,
+    servings: 2,
+    mealType: "dinner",
+    difficulty: "easy",
+    goal: "high_protein",
+    diets: [],
+    allergens: "",
+    extras: [],
+    variation: 0,
+    avoidNames: [],
+  },
+  "fresh-salad": {
+    ingredients: [
+      { name: "Огурец", quantity: 1, unit: "шт" },
+      { name: "Помидор", quantity: 2, unit: "шт" },
+      { name: "Сыр", quantity: 80, unit: "г" },
+      { name: "Зелень", quantity: 1, unit: "пучок" },
+    ],
+    equipment: ["none"],
+    timeMinutes: 10,
+    servings: 2,
+    mealType: "lunch",
+    difficulty: "easy",
+    goal: "regular",
+    diets: ["vegetarian"],
+    allergens: "",
+    extras: [],
+    variation: 0,
+    avoidNames: [],
+  },
+  "quick-breakfast": {
+    ingredients: [
+      { name: "Яйцо", quantity: 2, unit: "шт" },
+      { name: "Помидор", quantity: 1, unit: "шт" },
+      { name: "Сыр", quantity: 40, unit: "г" },
+    ],
+    equipment: ["electric_stove"],
+    timeMinutes: 10,
+    servings: 1,
+    mealType: "breakfast",
+    difficulty: "easy",
+    goal: "high_protein",
+    diets: ["vegetarian"],
+    allergens: "",
+    extras: [],
+    variation: 0,
+    avoidNames: [],
+  },
+};

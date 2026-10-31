@@ -1,0 +1,40 @@
+{
+  "name": "kuki",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "db:push": "prisma generate && prisma db push",
+    "test": "tsx --test src/lib/parser.test.ts src/lib/safety.test.ts src/lib/equipment.test.ts src/lib/composer.test.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.545.0",
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^24.6.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "^15.5.4",
+    "postcss": "^8.5.6",
+    "prisma": "^6.16.2",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.2"
+  }
+}
