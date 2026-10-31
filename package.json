@@ -12,6 +12,7 @@
     "test": "tsx --test src/lib/parser.test.ts src/lib/safety.test.ts src/lib/equipment.test.ts src/lib/composer.test.ts"
   },
   "dependencies": {
+    "@prisma/adapter-libsql": "^6.19.3",
     "@prisma/client": "^6.16.2",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",

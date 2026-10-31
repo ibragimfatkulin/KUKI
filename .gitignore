@@ -2,8 +2,10 @@ node_modules
 .next
 .env
 .env.local
+.env*.local
 prisma/dev.db
 prisma/dev.db-journal
 *.log
 tsconfig.tsbuildinfo
 next-env.d.ts
+.vercel

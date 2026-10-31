@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  serverExternalPackages: ["@prisma/adapter-libsql", "@libsql/client"],
 };
 
 export default nextConfig;
